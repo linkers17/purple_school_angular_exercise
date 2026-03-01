@@ -1,0 +1,14 @@
+<div class="form-input">
+  @if (iconUrl) {
+    <div class="form-input__icon">
+      <img class="form-input__icon-image" [ngSrc]="iconUrl" [alt]="type" width="24" height="24">
+    </div>
+  }
+  <input
+    class="form-input__input"
+    [(ngModel)]="value"
+    [type]="type"
+    [placeholder]="placeholder"
+    (input)="onInput($any($event.target).value)"
+  >
+</div>
