@@ -1,0 +1,12 @@
+<nav class="menu">
+  @for (item of menuList; track item.id) {
+    <app-menu-button
+      class="menu-button"
+      [text]="item.text"
+      [iconUrl]="item.iconUrl"
+      [iconUrlActive]="item.iconUrlActive"
+      [routerLink]="item.link"
+      routerLinkActive="active"
+    />
+  }
+</nav>

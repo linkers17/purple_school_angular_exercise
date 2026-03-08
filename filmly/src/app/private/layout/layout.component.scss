@@ -1,0 +1,19 @@
+.private-layout {
+  padding: 0 48px;
+
+  &--header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+  }
+
+  &--content {
+    display: flex;
+    gap: 16px;
+  }
+
+  &--aside {
+    width: 230px;
+  }
+}

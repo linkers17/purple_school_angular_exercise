@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { LayoutComponent } from './public/_layout/layout.component';
+import { RouterOutlet } from '@angular/router';
+import { AuthService } from './shared/services/auth.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.scss',
   imports: [
-    LayoutComponent,
-  ],
+    RouterOutlet,
+  ]
 })
 export class App {}

@@ -1,0 +1,12 @@
+<button
+  class="menu-button"
+  [ngClass]="{ 'menu-button--active': isActive }"
+  (click)="handleClick($event)"
+>
+  @if (isActive && iconUrlActive) {
+    <img [ngSrc]="iconUrlActive" alt="active icon" width="24" height="24">
+  } @else {
+    <img [ngSrc]="iconUrl" alt="non-active icon" width=24 height=24>
+  }
+  <span>{{ text }}</span>
+</button>

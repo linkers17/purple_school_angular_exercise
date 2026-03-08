@@ -2,10 +2,5 @@
   <div class="layout-logo">
     <img ngSrc="images/logo.svg" alt="Filmly" width="117" height="29">
   </div>
-  <h1 class="layout-heading">Вход</h1>
-  <div class="layout-form">
-    <app-input type="email" placeholder="Email" iconUrl="images/icons/user.svg" />
-    <app-password-input type="password" placeholder="Пароль" iconUrl="images/icons/lock.svg" />
-    <app-button class="layout-action" (btnClick)="handleClick($event)">Войти</app-button>
-  </div>
+  <router-outlet />
 </div>
