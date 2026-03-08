@@ -2,5 +2,5 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class AuthService {
-  public isAuth = true
+  public isAuth = false
 }
