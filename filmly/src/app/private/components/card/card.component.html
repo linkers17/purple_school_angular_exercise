@@ -1,0 +1,12 @@
+@if (movie) {
+  <div class="card">
+    <div class="card-image">
+      <img [ngSrc]="movie.posterUrl" [alt]="movie.title" width="210" height="310">
+      <button class="card-favorite" (click)="favoriteToggle()">
+        <img [ngSrc]="movie.isFavorite ? '/images/icons/star-fill.svg' : '/images/icons/star-line.svg'" alt="star" width="24" height="24">
+      </button>
+    </div>
+    <div class="card-title">{{ movie.title }}</div>
+    <app-rating [rating]="movie.rating"/>
+  </div>
+}

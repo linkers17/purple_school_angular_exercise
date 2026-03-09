@@ -1,0 +1,12 @@
+<div class="rating">
+  <div class="rating-base">
+    @for (star of stars; track $index) {
+      <img ngSrc="/images/icons/star-line.svg" alt="rating" width="24" height="24">
+    }
+  </div>
+  <div class="rating-fill" [appRatingFill]="rating">
+    @for (star of stars; track $index) {
+      <img ngSrc="/images/icons/star-fill.svg" alt="rating" width="24" height="24">
+    }
+  </div>
+</div>

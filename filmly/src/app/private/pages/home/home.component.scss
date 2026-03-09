@@ -1,0 +1,12 @@
+.home {
+  &-movies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 68px;
+  }
+
+  &-description {
+    margin-bottom: 48px;
+    display: block;
+  }
+}

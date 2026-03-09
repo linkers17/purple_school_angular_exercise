@@ -1,1 +1,12 @@
-<p>home works!</p>
+<div class="home">
+  <h1 class="home-title">Результаты поиска</h1>
+  <span class="home-description">Найдено 4 фильма</span>
+  <div class="home-movies">
+    @for (item of movies; track item.id) {
+      <app-card [movie]="item" />
+    } @empty {
+      <span>Список пуст</span>
+    }
+  </div>
+</div>
+
