@@ -1,1 +1,13 @@
-<p>favorites works!</p>
+<div class="favorites">
+  <h1 class="favorites-title">Избранное</h1>
+  @if (favorites.length) {
+    <span class="favorites-count">Вы добавили {{ favorites.length }} фильма</span>
+    <div class="favorites-movies">
+      @for (favorite of favorites; track favorite.id) {
+        <app-card [movie]="favorite" />
+      }
+    </div>
+  } @else {
+    <span class="favorites-empty">Список избранного пуст</span>
+  }
+</div>

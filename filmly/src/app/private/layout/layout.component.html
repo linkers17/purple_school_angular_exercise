@@ -4,7 +4,22 @@
     <app-menu />
   </header>
   <main class="private-layout--content">
-    <div class="private-layout--aside">aside</div>
+    <div class="private-layout--aside">
+      <div class="private-layout--aside__genres">
+        <div class="private-layout--aside__genres-heading">Жанр</div>
+        <div class="private-layout--aside__genres-radio-group">
+          @for (genr of genres; track genr.id) {
+            <div class="private-layout--aside__genres-radio-group__item">
+              <label>
+                <input type="radio" name="genres" [value]="genr.slug">
+                <span class="custom-radio"></span>
+                <span>{{ genr.name }}</span>
+              </label>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
     <div class="private-layout--page">
       <router-outlet />
     </div>

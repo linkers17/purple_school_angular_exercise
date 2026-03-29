@@ -1,0 +1,12 @@
+.favorites {
+  &-movies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 68px;
+  }
+
+  &-count {
+    margin-bottom: 48px;
+    display: block;
+  }
+}
