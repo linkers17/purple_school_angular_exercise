@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { MenuComponent } from '../components/menu/menu.component';
 import { NgOptimizedImage } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { GENRES, IGenre } from '../../shared/const/genres.const';
 
 @Component({
   selector: 'app-layout',
@@ -15,5 +16,5 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
 })
 export class PrivateLayoutComponent {
-
+  public genres: IGenre[] = GENRES
 }
